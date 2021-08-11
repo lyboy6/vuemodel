@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>姓名: {{name}}</div>
+    <div>年龄: {{age}}</div>
+    <div>info.a {{info.a}}</div>
+    <div>name的值: <input type="text" v-mode="name"></div>
+    <div>info.a的值: <input type="text" v-mode="info.a"></div>
+  </div>
+  <script src="./vue1.js"></script>
+  <script>
+    const vm = new Vue({
+      el: '#app',
+      data: {
+        name: 'zs',
+        age: 20,
+        info: {
+          a: 'a1',
+          b: 'b2'
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
